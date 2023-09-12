@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Select Car Options</h1>
+    </header>
+    <main>
+        <form id="carOptionsForm" method="post">
+            <h2>Select Car Options</h2>
+
+            <!-- Car Options Checkboxes  -->
+            <label for="hatchback">Hatchback</label>
+            <input type="checkbox" name="options[]" value="Hatchback" id="hatchback">
+
+            <label for="sedan">Sedan</label>
+            <input type="checkbox" name="options[]" value="Sedan" id="sedan">
+
+            <label for="suv">SUV</label>
+            <input type="checkbox" name="options[]" value="SUV" id="suv">
+
+            <h2>Your Information</h2>
+
+            <!-- Name Input Field -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <!-- Phone Number Input Field -->
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required>
+
+            <!-- Email Id Input Field -->
+            <label for="email">Email Id</label>
+            <input type="email" name="email" id="email" required>
+
+            <!-- Address Input Field -->
+            <label for="address">Address</label>
+            <textarea name="address" id="address" required></textarea>
+
+            <button type="button" id="submitButton">Submit</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
